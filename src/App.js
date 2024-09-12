@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="App">
       Dashboard is a simple
+      <div>
+        React app with a custom dashboard layout.
+      </div>
     </div>
   );
 }
