@@ -2,20 +2,21 @@
     /* margin-left: 200px; */
     padding: 15px 15px;
     background-color: white;
-    width: 27%;
+    width: 32%;
     border-radius: 10px;
     cursor: pointer;
 }
 .thumbnail{
-    width: 300px;
+    width: 350px;
     height: 170px;
 }
 h3{
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 18px;
     font-weight: 400;
 }
 .username{
+    margin-top: 2px;
     display: flex;
     gap: 10px;
 }
@@ -28,10 +29,12 @@ h3{
     font-weight: 300;
 }
 .bar{
+    margin-top: 2px;
     width: 300px;
     height: 10px;
 }
 h4{
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 300;
 }

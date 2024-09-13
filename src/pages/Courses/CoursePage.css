@@ -4,10 +4,10 @@
 }
 
 .resume-course {
-    padding: 30px 200px; /* Adjust padding to manage horizontal overflow */
+    padding: 30px 200px; /* Adjust padding to manage horizonṣtal overflow */
     height: 100%;
     width: 100%;
-    background-color: #9DCCFF;
+    background-color: #c2ddfa;
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Prevent vertical scrolling if not needed */
     box-sizing: border-box; /* Ensure padding is included in width calculations */
