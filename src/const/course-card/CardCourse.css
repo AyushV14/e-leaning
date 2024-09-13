@@ -1,0 +1,37 @@
+.CardCourse{
+    /* margin-left: 200px; */
+    padding: 15px 15px;
+    background-color: white;
+    width: 27%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.thumbnail{
+    width: 300px;
+    height: 170px;
+}
+h3{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.username{
+    display: flex;
+    gap: 10px;
+}
+.username img{
+    width: 30px;
+    height: 30px;
+}
+.username h3{
+    font-size: 16px;
+    font-weight: 300;
+}
+.bar{
+    width: 300px;
+    height: 10px;
+}
+h4{
+    font-size: 16px;
+    font-weight: 300;
+}
