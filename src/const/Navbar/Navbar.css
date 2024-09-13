@@ -5,8 +5,8 @@
   }
   
   .logo {
-    width: 104px;
-    height: 74px;
+    width: 84px;
+    height: 64px;
     margin: 30px 0 0 120px; /* Adjusted for better positioning */
   }
   
@@ -43,7 +43,12 @@
     gap: 10px; /* Reduced gap between profile image and name */
     margin-right: 120px;
   }
+  .profile-section .profile{
+    width: 64px;
+    height: 64px;
+  }
   .profile-section h3{
+    margin-top: 30px;
     font-size: 18px;
     font-weight: 400;
   }
