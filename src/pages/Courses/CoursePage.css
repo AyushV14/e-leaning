@@ -1,0 +1,42 @@
+.CoursePage {
+    width: 100%;
+    height: 100%;
+}
+
+.resume-course {
+    padding: 30px 200px; /* Adjust padding to manage horizonṣtal overflow */
+    height: 100%;
+    width: 100%;
+    background-color: #c2ddfa;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling if not needed */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+.text-view-history {
+    display: flex;
+    gap: 580px;
+    width: max-content; /* Ensure container width is determined by its content */
+}
+
+.text-view-history > * {
+    min-width: 0; /* Prevent content from forcing container to be too wide */
+}
+
+.text-view-history h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-view-history h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #225353;
+    cursor: pointer;
+
+}
+.cards{
+    display: flex;
+    gap: 50px;
+    
+}
