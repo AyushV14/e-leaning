@@ -1,9 +1,11 @@
-import React from 'react';
-import './GetStarted.css'; // Import the CSS file for styling
+import React from "react";
+import "./GetStarted.css"; // Import the CSS file for styling
+import { useAuth0 } from "@auth0/auth0-react";
 
 const GetStarted = () => {
+  const { loginWithRedirect, logout } = useAuth0();
   return (
-    <div className='getstated'>
+    <div className="getstated">
       {/* Navbar */}
       <nav className="navbar">
         <img src="images/logo.png" alt="Logo" className="logo" />
@@ -18,13 +20,30 @@ const GetStarted = () => {
         <div className="main-content">
           <h1 className="site-name">Learning Path Dashboard</h1>
           <p className="site-description">
-            Welcome to Learning Path Dashboard, a platform designed to enhance your skills
-            with personalized learning paths and resources. Track your reading statistics,
-            create and follow tailored learning paths, and monitor your progress seamlessly.
+            Welcome to Learning Path Dashboard, a platform designed to enhance
+            your skills with personalized learning paths and resources. Track
+            your reading statistics, create and follow tailored learning paths,
+            and monitor your progress seamlessly.
           </p>
           <div className="button-container">
-            <button className="auth-button">Login</button>
-            <button className="auth-button">Signup</button>
+            <button
+              className="auth-button"
+              onClick={() =>
+                loginWithRedirect({
+                  redirectUri: `${window.location.origin}/dashboard`,
+                })
+              }
+            >
+              Login / Sign up
+            </button>
+            {/* <button
+              className="auth-button"
+              onClick={() =>
+                logout({ logoutParams: { returnTo: window.location.origin } })
+              }
+            >
+              Signup
+            </button> */}
           </div>
         </div>
       </div>

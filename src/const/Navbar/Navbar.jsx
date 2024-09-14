@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
+import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { logout } = useAuth0();
 
   const toggleDropdown = () => {
     setDropdownOpen(prevState => !prevState);
@@ -26,7 +28,7 @@ export default function Navbar() {
             <ul>
               <li>Profile</li>
               <li>Settings</li>
-              <li>Logout</li>
+              <li onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</li>
             </ul>
           </div>
         </div>
