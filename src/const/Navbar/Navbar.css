@@ -26,6 +26,7 @@
     gap: 45px; /* Adds spacing between items */
     color: rgb(85, 85, 85);
     font-weight: 300;
+    padding-right: 1.5rem;
   }
   
   nav ul li {
@@ -37,13 +38,19 @@
   
   .profile-section {
     position: relative;
+    height: 100px;
     cursor: pointer;
     display: flex;
     align-items: center; /* Vertically centers the profile section */
-    gap: 10px; /* Reduced gap between profile image and name */
     margin-right: 120px;
+    gap: 10px;
+    color: black;
+  }
+  .profile-section h3{
+    box-sizing: border-box;
   }
   .profile-section .profile{
+    box-sizing: border-box;
     width: 54px;
     height: 54px;
   }

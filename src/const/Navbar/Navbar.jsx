@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Navbar.css";
-import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0, User } from "@auth0/auth0-react";
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -9,7 +9,7 @@ export default function Navbar() {
   const toggleDropdown = () => {
     setDropdownOpen(prevState => !prevState);
   };
-
+  
   return (
     <div className='navbar'>
       <nav>
