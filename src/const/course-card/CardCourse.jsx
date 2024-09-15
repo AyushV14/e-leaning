@@ -1,17 +1,33 @@
-import React from 'react'
-import "./CardCourse.css"
+import React from "react";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+} from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import InnerCard from "./innercard"
 
-export default function CardCourse() {
+export default function CardCourse({user}) {
   return (
-    <div className='CardCourse'>
-        <img src="images/coursecard-thumbnail.png" alt="thumbnail" className='thumbnail'/>
-        <h3>AWS Certified Solutions Architect</h3>
-        <div className="username">
-            <img src="images/profile.png" alt="Profile" className='profile'/>
-            <h3>Ayush ↓ </h3>
+    <>
+      <header className="bg-white shadow">
+        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+            Welcome to Dashboard {user.given_name}
+          </h1>
         </div>
-        <img src="images/bardone.png" alt="" className='bar'/>
-        <h4>Lesson 5 of 7</h4>
-    </div>
-  )
+      </header>
+      <main  className="bg-gray-100 h-screen overflow-scroll flex justify-center">
+        <div className=" max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          {
+            <InnerCard user={user}/>
+          }
+        </div>
+      </main>
+    </>
+  );
 }

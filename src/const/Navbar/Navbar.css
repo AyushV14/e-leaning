@@ -1,20 +1,20 @@
 .navbar {
     height: 16vh;
     width: 100%;
-    /* border: 1px solid black; */
+ 
   }
   
   .logo {
     width: 84px;
     height: 64px;
-    margin: 30px 0 0 120px; /* Adjusted for better positioning */
+    margin: 30px 0 0 120px; 
   }
   
   nav {
     display: flex;
-    justify-content: space-between; /* Distributes space between logo and menu items */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 10px; /* Adds padding on the left and right of the nav */
+    padding: 0 10px;
     margin: 0;
   }
   
@@ -22,8 +22,8 @@
     list-style: none;
     padding: 0;
     margin-left: 350px;
-    display: flex; /* Aligns items horizontally */
-    gap: 45px; /* Adds spacing between items */
+    display: flex; 
+    gap: 45px; 
     color: rgb(85, 85, 85);
     font-weight: 300;
     padding-right: 1.5rem;
@@ -41,7 +41,7 @@
     height: 100px;
     cursor: pointer;
     display: flex;
-    align-items: center; /* Vertically centers the profile section */
+    align-items: center;
     margin-right: 120px;
     gap: 10px;
     color: black;
